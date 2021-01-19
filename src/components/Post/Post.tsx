@@ -13,8 +13,13 @@ const Post = (): React.ReactElement => {
       {community && (
         <>
           <Helmet>
+            <meta name="description" content={community.desc} />
+            <meta name="keywords" content={community.title} />
             <title>{community.title}</title>
-            <meta />
+            <meta property="og:title" content={community.title} />
+            <meta property="og:image" content={community.thumbnail} />
+            <meta property="og:site_name" content="WEHAGO" />
+            <meta property="og:description" content={community.desc} />
           </Helmet>
           <div style={{ width: '400px', margin: '50px' }}>
             <div>
