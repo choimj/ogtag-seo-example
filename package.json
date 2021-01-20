@@ -22,7 +22,10 @@
     "include": [
       "/",
       "/post",
-      "/post/4"
+      "/post/4",
+      "/post/8",
+      "/post/9",
+      "/post/10"
     ]
   },
   "eslintConfig": {
