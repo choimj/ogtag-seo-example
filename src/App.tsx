@@ -1,12 +1,12 @@
 import React from 'react';
-import { HashRouter as Router } from 'react-router-dom';
+import { HashRouter, BrowserRouter } from 'react-router-dom';
 import AppRouter from './router/AppRouter';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <AppRouter />
-    </Router>
+    </BrowserRouter>
   );
 }
 
