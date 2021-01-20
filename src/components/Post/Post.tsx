@@ -15,7 +15,7 @@ const Post = (): React.ReactElement => {
           <HelmetProvider>
             <Helmet>
               <title>{community.title}</title>
-              <meta property="og:site_name" content="WEHAGO" />
+              <meta property="og:site_name" content="WEHAGO22222" />
               <meta property="og:title" content={community.title} />
               <meta property="og:image" content={community.thumbnail} />
               <meta property="og:url" content={document.location.href} />
