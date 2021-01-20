@@ -13,8 +13,6 @@ const Post = (): React.ReactElement => {
       {community && (
         <>
           <Helmet>
-            <meta name="description" content={community.desc} />
-            <meta name="keywords" content={community.title} />
             <title>{community.title}</title>
             <meta property="og:title" content={community.title} />
             <meta property="og:image" content={community.thumbnail} />
