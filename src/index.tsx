@@ -1,10 +1,24 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render, hydrate } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root'),
-);
+const rootElement = document.getElementById('root');
+
+if (rootElement?.hasChildNodes()) {
+  hydrate(
+    <BrowserRouter>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </BrowserRouter>,
+    rootElement,
+  );
+} else {
+  render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>,
+    rootElement,
+  );
+}
