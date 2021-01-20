@@ -20,6 +20,7 @@ const Post = (): React.ReactElement => {
               <meta property="og:image" content={community.thumbnail} />
               <meta property="og:url" content={document.location.href} />
               <meta property="og:description" content={community.desc} />
+              <meta property="description" content={community.desc} />
             </Helmet>
           </HelmetProvider>
           <div style={{ width: '400px', margin: '50px' }}>
