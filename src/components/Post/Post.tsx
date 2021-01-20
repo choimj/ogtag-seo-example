@@ -17,7 +17,9 @@ const Post = (): React.ReactElement => {
             <meta property="og:title" content={community.title} />
             <meta property="og:image" content={community.thumbnail} />
             <meta property="og:site_name" content="WEHAGO" />
-            <meta property="og:description" content={community.desc} />
+            {/* <meta property="og:description" content={community.desc} /> */}
+            <meta property="og:description" content="texttext test" />
+            <meta property="description" content={community.desc} />
           </Helmet>
           <div style={{ width: '400px', margin: '50px' }}>
             <div>
