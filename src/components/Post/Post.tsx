@@ -14,13 +14,15 @@ const Post = (): React.ReactElement => {
         <>
           <Helmet>
             <title>{community.title}</title>
-            <meta property="og:type" content="website"></meta>
+            <meta property="og:type" content="website" />
             <meta property="og:title" content="title text test" />
-            <meta property="og:image" content={community.thumbnail} />
+            <meta
+              property="og:image"
+              content="https://api0.wehago.com/DCloudStorageServer/WehagoIMG/company_9/2020/09/25/f7fdeb40-fecf-11ea-8429-c7ccda4cb63b.jpg"
+            />
             <meta property="og:site_name" content="WEHAGO" />
-            {/* <meta property="og:description" content={community.desc} /> */}
+            <meta property="og:url" content={document.location.href} />
             <meta property="og:description" content="texttext test" />
-            {/* <meta property="description" content={community.desc} /> */}
             <meta property="description" content="description test" />
           </Helmet>
           <div style={{ width: '400px', margin: '50px' }}>
