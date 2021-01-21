@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "firebase-tools": "^9.2.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-helmet": "6.1.0",
@@ -15,11 +16,11 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "react-snap",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint --ext .jsx,.js,.tsx,.ts src/ --fix",
-    "sitemap": "babel-node sitemapGenerator.js"
+    "sitemap": "babel-node sitemapGenerator.js",
+    "server-start": "node server.js"
   },
   "reactSnap": {
     "include": [
